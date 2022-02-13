@@ -1,5 +1,7 @@
 # jdbc-ziped-blobs
+
 #ABSTRACT
+
 #RESULTS
 | name                               | size    | create        | write         | read          | lob    |
 | ---------------------------------- | ------- | ------------- | ------------- | ------------- | ------ |
@@ -39,6 +41,7 @@
 | ZippedPartialSerializationTest     | 1000    | 0:00:00.01000 | 0:00:00.01066 | 0:00:00.01021 | 29,1kB |
 | ZippedPartialSerializationTest     | 100000  | 0:00:00.01087 | 0:00:04.01251 | 0:00:00.01607 | 2,9MB  |
 | ZippedPartialSerializationTest     | 1000000 | 0:00:00.01134 | 0:00:41.01529 | 0:00:05.01889 | 28,7MB |
+
 #TODO
 1. замерить память на сериализацию/десериализацию и архивацию/разархивацию
 1. Исправить NotZippedPartialSerializationTest записывает миллион записей 30 мин., проблема в PartialJsonStrategy.
